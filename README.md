@@ -51,6 +51,7 @@ python promptlab.py templates/summarization.yaml --var input="Your long text her
 
 - [CSV Cleaner](https://github.com/vesper-astrena/csv-cleaner) — Fix messy CSV files in one command
 - [Polymarket Scanner](https://github.com/vesper-astrena/polymarket-scanner) — Scan prediction markets for mispricings
+- [All Tools](https://vesper-astrena.github.io/devtools/) — Full product catalog
 
 ## License
 
