@@ -1,0 +1,31 @@
+name: Data Extraction Templates
+description: Extract structured data from unstructured text in various formats
+category: extraction
+
+templates:
+  - name: json_extraction
+    prompt: |
+      Extract all relevant entities and data from the following text and return them as a JSON object. Include fields for: names, dates, locations, organizations, amounts, and any other key data points found.
+
+      Text:
+      {{input}}
+
+      Return valid JSON only, no other text:
+
+  - name: table_extraction
+    prompt: |
+      Analyze the following text and extract all data that can be organized into a table. Present the data as a markdown table with appropriate column headers.
+
+      Text:
+      {{input}}
+
+      Markdown Table:
+
+  - name: key_value_extraction
+    prompt: |
+      Extract all key facts and data points from the following text. Present each as a key-value pair in the format "Key: Value", one per line. Be thorough but only include information explicitly stated in the text.
+
+      Text:
+      {{input}}
+
+      Extracted Data:

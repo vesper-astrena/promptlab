@@ -1,0 +1,57 @@
+name: Code Review Templates
+description: Review code for bugs, style, performance, and security issues
+category: code_review
+
+templates:
+  - name: bug_finder
+    prompt: |
+      Review the following code for bugs, logic errors, and potential runtime issues. For each issue found, specify:
+      - Line or section where the issue occurs
+      - What the bug is
+      - How to fix it
+
+      If no bugs are found, state that the code appears correct.
+
+      Code:
+      ```
+      {{input}}
+      ```
+
+      Bug Report:
+
+  - name: comprehensive_review
+    prompt: |
+      Perform a comprehensive code review of the following code. Evaluate it on these dimensions:
+
+      1. **Correctness**: Are there any bugs or logic errors?
+      2. **Readability**: Is the code clear and well-structured?
+      3. **Performance**: Are there any performance concerns or inefficiencies?
+      4. **Security**: Are there any security vulnerabilities?
+      5. **Best Practices**: Does it follow language idioms and best practices?
+
+      Rate each dimension as Good/Needs Improvement/Poor and provide specific feedback.
+
+      Code:
+      ```
+      {{input}}
+      ```
+
+      Review:
+
+  - name: refactor_suggestions
+    prompt: |
+      Analyze the following code and suggest specific refactoring improvements. Focus on:
+      - Reducing complexity
+      - Improving naming
+      - Extracting reusable functions
+      - Removing duplication
+      - Applying relevant design patterns
+
+      For each suggestion, show the before and after code.
+
+      Code:
+      ```
+      {{input}}
+      ```
+
+      Refactoring Suggestions:

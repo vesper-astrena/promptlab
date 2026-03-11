@@ -1,0 +1,34 @@
+name: Summarization Templates
+description: Three approaches to text summarization with different styles and focus
+category: summarization
+
+templates:
+  - name: concise_summary
+    prompt: |
+      Summarize the following text in 2-3 sentences. Focus on the key points and main takeaway.
+
+      Text:
+      {{input}}
+
+      Summary:
+
+  - name: bullet_point_summary
+    prompt: |
+      Extract the key points from the following text and present them as a bullet-point summary. Include no more than 5 bullet points, ordered by importance.
+
+      Text:
+      {{input}}
+
+      Key Points:
+
+  - name: executive_summary
+    prompt: |
+      Write an executive summary of the following text. Structure it as:
+      1. Main Finding/Conclusion (1 sentence)
+      2. Key Supporting Points (2-3 sentences)
+      3. Implications/Next Steps (1 sentence)
+
+      Text:
+      {{input}}
+
+      Executive Summary:

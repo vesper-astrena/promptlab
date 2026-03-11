@@ -1,0 +1,35 @@
+name: Classification Templates
+description: Classify text into categories with varying levels of detail and confidence
+category: classification
+
+templates:
+  - name: simple_classification
+    prompt: |
+      Classify the following text into exactly one of these categories: {{categories}}
+
+      Text:
+      {{input}}
+
+      Respond with only the category name, nothing else.
+
+  - name: multi_label_classification
+    prompt: |
+      Analyze the following text and assign all applicable labels from this list: {{categories}}
+
+      Text:
+      {{input}}
+
+      Return the applicable labels as a comma-separated list, ordered by relevance. Include a confidence score (0.0-1.0) for each label in the format "label (0.95)".
+
+  - name: classification_with_reasoning
+    prompt: |
+      Classify the following text into one of these categories: {{categories}}
+
+      Text:
+      {{input}}
+
+      Provide your response in this exact format:
+      Category: [selected category]
+      Confidence: [high/medium/low]
+      Reasoning: [1-2 sentence explanation of why this category was chosen]
+      Alternative: [second most likely category, if applicable]

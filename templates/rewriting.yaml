@@ -1,0 +1,31 @@
+name: Rewriting Templates
+description: Rewrite text for different audiences, tones, and purposes
+category: rewriting
+
+templates:
+  - name: simplify
+    prompt: |
+      Rewrite the following text to make it simpler and easier to understand. Target a general audience with no specialized knowledge. Use short sentences, common words, and clear structure. Preserve all key information.
+
+      Original:
+      {{input}}
+
+      Simplified Version:
+
+  - name: professional_tone
+    prompt: |
+      Rewrite the following text in a professional, business-appropriate tone. Make it polished and clear while maintaining the original meaning. Use active voice and precise language. Remove any informal expressions.
+
+      Original:
+      {{input}}
+
+      Professional Version:
+
+  - name: engaging_rewrite
+    prompt: |
+      Rewrite the following text to be more engaging and compelling. Use vivid language, varied sentence structure, and rhetorical techniques to capture the reader's attention. Maintain factual accuracy while making the content more interesting to read.
+
+      Original:
+      {{input}}
+
+      Engaging Version:
