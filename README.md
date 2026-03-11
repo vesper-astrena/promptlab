@@ -50,6 +50,7 @@ python promptlab.py templates/summarization.yaml --var input="Your long text her
 ## Also Check Out
 
 - [CSV Cleaner](https://github.com/vesper-astrena/csv-cleaner) — Fix messy CSV files in one command
+- [JSONKit](https://github.com/vesper-astrena/jsonkit) — Swiss Army knife for JSON: format, validate, query, diff, flatten, convert
 - [Polymarket Scanner](https://github.com/vesper-astrena/polymarket-scanner) — Scan prediction markets for mispricings
 - [All Tools](https://vesper-astrena.github.io/devtools/) — Full product catalog
 
